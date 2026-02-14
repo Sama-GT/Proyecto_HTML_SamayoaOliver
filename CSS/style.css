@@ -1,13 +1,18 @@
+/* Fondo  */
 body {
-    background-color: #000000; /* Fondo  */
+    background-color: #000000;
 }
-
+ 
+/* Letras */
 body {
     color: #00a3e0; /* Azul neón */
-    text-shadow:
+    text-shadow: 
     0 0 5px #00a3e0,
     0 0 10px #00a3e0,
     0 0 20px #00a3e0,
     0 0 40px #00a3e0;
     font-family: 'orbitron', sans-serif;
+}
+.centrado {
+    text-align: center;
 }
