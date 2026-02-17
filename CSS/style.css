@@ -646,3 +646,46 @@ body {
     color: var(--text-secondary);
     margin-bottom: 2rem;
 }
+
+/* Libreria page */
+.library-page {
+    padding: 2rem 1rem;
+}
+
+.library-sidebar {
+    margin-bottom: 2rem;
+}
+
+.library-sidebar ul {
+    list-style: none;
+}
+
+.library-sidebar li {
+    padding: 0.8rem 0;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.library-sidebar li.active,
+.library-sidebar li:hover {
+    color: var(--accent);
+}
+
+.library-content h1 {
+    margin-bottom: 2rem;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    .library-page {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap: 3rem;
+    }
+
+    .library-sidebar {
+        margin-bottom: 0;
+    }
+
+}
