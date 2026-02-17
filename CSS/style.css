@@ -620,3 +620,29 @@ body {
     }
 
 }
+
+/* Succes pages */
+.success-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.success-card {
+    background-color: var(--bg-card);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.success-card h1 {
+    margin-bottom: 1rem;
+}
+
+.success-card p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
