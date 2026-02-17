@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MusicStream - Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">MusicStream</div>
+
+    <nav class="nav-links">
+        <a href="index.html">Discover</a>
+        <a href="library.html">Library</a>
+        <a href="cart.html" class="active">Store</a>
+    </nav>
+
+    <div class="header-actions">
+        <input type="text" placeholder="Artists, albums, tracks" class="search-bar">
+        <div class="avatar"></div>
+    </div>
+</header>
+
+<main class="cart-page">
+
+    <!-- cart items -->
+    <section class="cart-items">
+
+        <h1>Your Cart</h1>
+
+        <div class="cart-item">
+            <div class="item-info">
+                <div class="item-cover"></div>
+                <div>
+                    <h3>Cosmic Echoes</h3>
+                    <p>Nova Pulse</p>
+                </div>
+            </div>
+
+            <div class="item-quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+
+            <div class="item-price">$14.99</div>
+
+            <button class="remove-btn">🗑</button>
+        </div>
+
+    </section>
+
+    <!-- Order summary -->
+    <aside class="order-summary">
+        <h2>Order Summary</h2>
+
+        <div class="summary-line">
+            <span>Subtotal</span>
+            <span>$14.99</span>
+        </div>
+
+        <div class="summary-line">
+            <span>Tax</span>
+            <span>$1.20</span>
+        </div>
+
+        <div class="summary-line total">
+            <span>Total</span>
+            <span>$16.19</span>
+        </div>
+
+        <a href="checkout.html" class="btn-primary checkout-btn">
+            Proceed to Checkout
+        </a>
+    </aside>
+
+</main>
+
+</body>
+</html>
