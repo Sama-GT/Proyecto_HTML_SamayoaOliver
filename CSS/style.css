@@ -540,3 +540,83 @@ body {
     }
 
 }
+
+/* checkout page */
+.checkout-page {
+    padding: 2rem 1rem;
+}
+
+.checkout-form h1 {
+    margin-bottom: 2rem;
+}
+
+.form-section {
+    margin-bottom: 2.5rem;
+}
+
+.form-section h2 {
+    margin-bottom: 1rem;
+}
+
+.payment-options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.payment-card {
+    flex: 1;
+    padding: 1rem;
+    background-color: var(--bg-card);
+    border-radius: var(--radius);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.payment-card.active,
+.payment-card:hover {
+    border: 2px solid var(--accent);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    padding: 0.7rem;
+    border-radius: var(--radius);
+    border: none;
+    background-color: var(--bg-card);
+    color: white;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.checkout-summary {
+    margin-top: 2rem;
+    background-color: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+
+    .checkout-page {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+    }
+
+}
