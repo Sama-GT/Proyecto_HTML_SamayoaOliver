@@ -184,3 +184,134 @@ body {
     }
 
 }
+
+/* Album Page */
+.album-page {
+    padding: 2rem 1rem;
+}
+
+/* Album Header */
+.album-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.album-cover-large {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(135deg, #1e40af, #0f172a);
+    border-radius: var(--radius);
+}
+
+.album-info h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.artist {
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.meta {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.album-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-secondary {
+    background-color: var(--bg-card);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+}
+
+.secondary-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Track table */
+.track-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.track-table th,
+.track-table td {
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.track-table tbody tr {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.track-table tbody tr:hover {
+    background-color: var(--bg-card);
+}
+
+/* Tabs */
+.info-tabs {
+    margin-top: 3rem;
+}
+
+.tab-nav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tab {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+}
+
+.tab.active {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+}
+
+.tab-content {
+    background-color: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+
+    .album-header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .album-cover-large {
+        width: 350px;
+    }
+
+    .album-info {
+        flex: 1;
+    }
+
+    .album-actions {
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
