@@ -708,3 +708,23 @@ body {
     }
 
 }
+
+/*global music player*/
+.music-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-card);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #1f2937;
+    z-index: 999;
+}
+
+.music-player audio {
+    width: 100%;
+    max-width: 500px;
+    filter: invert(1) hue-rotate(180deg);
+}
