@@ -728,3 +728,52 @@ body {
     max-width: 500px;
     filter: invert(1) hue-rotate(180deg);
 }
+
+/*album covers */
+.cover-1 { background: linear-gradient(135deg, #3b82f6, #1e3a8a); }
+.cover-2 { background: linear-gradient(135deg, #9333ea, #4c1d95); }
+.cover-3 { background: linear-gradient(135deg, #06b6d4, #0e7490); }
+.cover-4 { background: linear-gradient(135deg, #f97316, #7c2d12); }
+.cover-5 { background: linear-gradient(135deg, #22c55e, #14532d); }
+
+.album-cover {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius);
+}
+
+.track-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.track-card {
+    background-color: var(--bg-card);
+    padding: 1rem;
+    border-radius: var(--radius);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.track-card:hover {
+    transform: translateY(-4px);
+    background-color: #1f2937;
+}
+
+.track-cover {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.album-card {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.album-card:hover {
+    transform: scale(1.05);
+}
