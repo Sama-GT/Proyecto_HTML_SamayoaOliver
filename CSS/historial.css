@@ -18,3 +18,22 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 12px;
 }
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+    padding: 12px;
+    align-items: center;
+}
+
+.table-header {
+    background-color: darkslateblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px 6px 0 0;
+}
